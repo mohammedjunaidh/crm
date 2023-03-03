@@ -1,20 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { Component } from 'react';
+import { StyleSheet,  View } from 'react-native';
+import Crm from "./src/components/Crm/index";
+import Otp from "./src/components/Crm/Otp"
+// import Verification from './src/components/Crm/verification';
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <View style={styles.container} >
+    {/* <> */}
+      {/* <Crm/>  */}
+       <Otp/>  
+      {/* <Verification /> */}
+  </View>
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+};
+const styles=StyleSheet.create({
+  container:{
+     flex:1,
+     justifyContent:'center',
+    alignItems:'center',
+  }
+  
+})
